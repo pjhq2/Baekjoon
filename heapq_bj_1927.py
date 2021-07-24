@@ -1,10 +1,11 @@
 # 1927 최소 힙
 import heapq
+import sys
 h = []
 arith = []
-N = int(input())
+N = int(sys.stdin.readline())
 for _ in range(N):
-    arith.append(int(input()))
+    arith.append(int(sys.stdin.readline()))
 for a in arith:
     if a != 0:
         heapq.heappush(h, a)
